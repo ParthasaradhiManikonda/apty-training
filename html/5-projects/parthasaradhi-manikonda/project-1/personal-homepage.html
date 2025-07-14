@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parthasaradhi-Personal-Portfolio</title>
+    <link rel="stylesheet" href="personal-homepage.css">
+</head>
+<body>
+    <main>
+        <header class="personal-portfolio-header-section">
+        
+                <h1 class="portfolio-heading">My Personal Portfolio</h1>
+        
+            <nav class="portfolio-nav-bar">
+                <ul class="nav-links-container">
+                    <li class="nav-link">
+                        <a class="nav-link-text" href="#about-me-section">About Me</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link-text" href="#education-section">Education</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link-text" href="#skills-section">Skills</a>
+                    </li>
+                    
+                    <li class="nav-link">
+                        <a class="nav-link-text" href="#contact-me-section">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="portfolio-about-me-section" id="about-me-section">
+            <img src="https://static.vecteezy.com/system/resources/previews/005/544/718/non_2x/profile-icon-design-free-vector.jpg" 
+            class="about-me-image" alt="Parthasaradhi-Profile_Image"/>
+            <h1 class="about-me-header">About Me</h1>
+            <p class="about-me-description">Hi, I am <span class="about-me-section-name">Parthasaradhi.</span>
+I'm a recent Computer Science graduate (Class of 2025) with practical experience across both hardware and software domains. 
+I interned at Texoham AI as a Robotics and IoT Engineer for 5 months, working on automation and smart systems. 
+Currently, I’m working at Apty as a Solution Engineer, helping deliver impactful tech solutions to real-world business challenges.
+I’m deeply interested in software development and have built full-stack projects, 
+including an e-commerce platform and a video streaming service.
+ I enjoy solving complex problems through technology and am always looking to grow as a developer and engineer.You can find all my projects
+  <a href="https://github.com/ParthasaradhiManikonda">here.</a> </p>
+        </section>
+        <section class="portfolio-education-section" id="education-section">
+            <h1 class="education-heading">Education</h1>
+            <ul class="education-list-container">
+                <li class="education-description">
+                    B.TECH from KNR College of engineering major in Computer science (2021-2025)
+                </li>
+                <li class="education-description">
+                    Intermediate from Narayana Junior College (2019-2021)
+                </li>
+                <li class="education-description">
+                    SSC from Bhashyam High School (2019)
+                </li>
+            </ul>
+        </section>
+        <section class="portfolio-skills-section" id="skills-section">
+            <h1 class="skills-heading">My Skills</h1>
+            <div class="skills">
+            <div class="skills-container">
+                <img src="https://static.vecteezy.com/system/resources/previews/013/313/458/non_2x/html-icon-3d-rendering-illustration-vector.jpg " class="skill-image" alt="HTML-Image"/>
+                <p class="skill-name">HTML</p>
+            </div>
+            <div class="skills-container">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubsfvX1GCHF8amyfEQxTz7AECFDY-oGMVTg&s" class="skill-image" alt="CSS-Image"/>
+                <p class="skill-name">CSS</p>
+            </div>
+            <div class="skills-container">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" class="skill-image" alt="Javascript-image"/>
+                <p class="skill-name">Javascript</p>
+            </div>
+            <div class="skills-container">
+                <img src="https://www.patterns.dev/img/reactjs/react-logo@3x.svg" class="skill-image" alt="ReactJS-Image"/>
+                <p class="skill-name">React JS</p>
+            </div>
+            <div class="skills-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" class="skill-image" alt="NodeJS-Image"/>
+                <p class="skill-name">Node JS</p>
+            </div>
+            <div class="skills-container">
+                <img src="https://www.20i.com/blog/wp-content/uploads/2022/08/git-blog-header.png" class="skill-image" alt="GIT-Image"/>
+                <p class="skill-name">Git</p>
+            </div>
+            </div>
+        </section>
+        <section class="portfolio-contact-me-section" id="contact-me-section">
+            <h1 class="contact-me-heading">Contact-Me</h1>
+            <form class="contact-me-form" action="/submit" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="form-input">
+                <label for="contact-me-name" class="form-label">Name :</label>
+                <input type="text" class="input-field" id="contact-me-name"
+                placeholder="Enter-your-name"
+                required>
+                </div>
+                <div class="form-input">
+                <label for="contact-me-email" 
+                class="form-label">Email :</label>
+                <input type="email"
+                 class="input-field" 
+                 id="contact-me-email"
+                 placeholder="name@domain.com"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                required>
+                </div>
+                <div class="form-input">
+                <label for="contact-me-date" class="form-label">Date :</label>
+                <input type="date" class="input-field" id="contact-me-date" required>
+                </div>
+                <div class="form-input">
+                    <input type="submit" class="submit-button"> 
+                </div>
+            </form>
+
+        </section>
+    
+    <footer class="copyright-section">
+    <p>&copy; Parthasaradhi's Personal Portfolio</p>
+    </footer>
+</main>
+</body>
+</html>

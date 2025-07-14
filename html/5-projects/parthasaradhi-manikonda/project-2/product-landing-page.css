@@ -1,0 +1,210 @@
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.product-landing-page-header-section{
+    display: flex;
+    background-color: rgb(233, 237, 236);
+    justify-content: space-between;
+    border-radius: 20px;
+    margin:10px;
+    box-shadow: 2px 2px 14px white;
+}
+.apple-logo{
+    height: 60px;
+    margin:5px;
+}
+
+
+.nav-links-container{
+    list-style-type: none;
+      display: flex;
+    padding:10px;
+}
+
+.nav-link-text{
+    color:rgb(11, 11, 11);
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.main-content{
+    padding: 5px;
+
+}
+
+.about-product-section{
+    width: 98%;
+    background-color:#efecec9d;
+    text-align: center  ;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.product-name-heading{
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.about-product-main-image{
+    border-radius: 60px;
+}
+.about-product-description{
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.about-product-bold-text{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-product-price-heading{
+    font-size: 30px;
+    color:blue;
+}
+
+.product-video-heading{
+    font-size: 26px;
+    text-decoration: underline;
+}
+.product-manufacturer-heading{
+    font-size: 30px;
+    color:rgb(61, 60, 60);
+}
+.product-features-section{
+    width: 98%;
+    background-color:#efecec9d;
+    text-align: center  ;
+    padding: 10px;
+    margin: 10px;
+}
+.product-feature-card{
+    border:1px solid grey;
+    height:auto;
+    width: 30%;
+}
+
+.product-feature-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.product-feature-card{
+    margin:5px;
+    text-align: center;
+}
+
+
+.feature-title{
+    font-size: 20px;
+}
+
+.feature-description{
+    font-size: 18px;
+    color:blue
+}
+.product-features-performance-heading{
+    font-size: 35px;
+}
+
+.product-performance-description{
+    font-size: 30px;
+    color: rgb(53, 52, 52);
+    font-weight: 500;
+}
+
+
+.special-features-container{
+    box-shadow: 2px 2px 2px 2px rgb(79, 77, 77);
+    text-align: center;
+    height: 130px;
+    margin:10px;
+    padding: 10px;
+}
+
+.special-features-text{
+    color: rgb(53, 53, 2);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.product-pricing-section{
+    background-color: #efecec9d;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+  
+    margin:  auto;
+}
+
+
+.product-gallery-card-1{
+    display :flex;
+    padding: 8px;
+}
+.product-gallery-image-1{
+    width:60%;
+    margin:5px; 
+
+}
+
+.product-gallery-card-1-heading{
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;   
+
+}
+
+.product-contact-support-section{
+    width:98%;
+    background-color: #FAFAFA;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.contact-us-heading{
+    font-size: 35px;
+}
+.contact-us-form{
+    height:500px;
+    background-color: rgb(212, 215, 218);
+    width: 30%;
+    margin: auto;
+    padding:10px;
+    border-radius: 30px;
+
+}
+.form-input{
+    margin:10px;
+}
+.contact-us-input-field{
+    width: 50%;
+    height:50px;
+}
+.form-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.submit-button{
+    height: 50px;
+    width: 200px;
+    border-width: 0px;
+    border-radius: 20px;
+    color:#0d0d0d;
+    font-size: 20px;
+
+
+}
+
+.copyright-section{
+    background-color: #f2eeee;
+    text-align: center;
+    margin:10px;
+    border-radius: 10px;
+}
