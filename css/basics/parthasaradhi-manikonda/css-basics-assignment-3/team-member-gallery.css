@@ -55,6 +55,7 @@ body {
     height: 180px;
     border-radius: 6px;
     margin-bottom: 15px;
+    object-fit: cover;
 }
 
 
