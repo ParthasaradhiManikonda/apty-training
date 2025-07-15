@@ -1,0 +1,138 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Recipe Page</title>
+        <style>
+            .recipe-page-main-container{
+                padding: 10px;
+                background-image: url("https://wallpaperaccess.com/full/1561679.jpg");
+                background-size: cover;
+            }
+            #recipe-main-heading{
+                font-size: 40px;
+                text-align: center;
+                color:rgb(188, 244, 104);
+                font-style: italic;
+                background-color: rgb(121, 49, 4);
+                font-weight: bold;
+            }
+            .recipe-serving-info-container{
+                text-align: center;
+                border:rgb(51, 20, 20) solid;
+                border-radius: 10px;
+                padding: 5px;
+                color:white;
+                width: 60%;
+                margin:auto;
+            }
+            span{
+                margin:10px;
+                font-size: 26px;
+
+            }
+            .ingredients-and-instructions-container{
+                display: flex;
+                padding: 10px;
+            }
+            .ingredients-container{
+                width: 40%;
+                padding: 10px;
+                background-color: antiquewhite;
+                margin: 30px;
+            }
+            .ingredients-heading{
+                font-size: 35px;
+                color: rgb(17, 17, 16);
+                text-align: center;
+            }
+            .ingredient-text{
+                font-size: 25px;
+            }
+            .instructions-container{
+                padding: 20px;
+                width: 60%;
+                background-color: beige;
+                height: auto;
+                
+            }
+            .instructions-heading{
+                font-size: 35px;
+                text-align: center;
+            }
+            .instructions-text{
+                font-size: 21px;
+            }
+            .recipe-image-section{
+                text-align: center;
+                border: solid white;
+                width: 60%;
+                margin:auto;
+                background-color: white;
+            }
+            .recipe-image{
+                width: 100%;
+                
+                height: auto; 
+            }
+            .recipe-title{
+                text-align: center;
+                font-size: 30px;
+                font-style: italic;
+                color:rgb(2, 21, 39);
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="recipe-page-main-container">
+            <h1 id="recipe-main-heading">Grandma's Perfect Apple Pie</h1>
+            <div class="recipe-serving-info-container">
+                <span class="serving-info-text">Serving:8 slices</span>
+                <span class="serving-info-text">Prep-Time: 30 minutes</span>
+                <span class="serving-info-text">Baking-Time: 45-50 minutes</span>
+            </div>
+            <main class="ingredients-and-instructions-container">
+                <section class="ingredients-container">
+                    <h2 class="ingredients-heading">What You Need</h2>
+                    <ul>
+                        <li class="ingredient-text">1/2 cup sugar</li>
+                        <li class="ingredient-text">1/2 cup packed brown sugar</li>
+                        <li class="ingredient-text">3 tablespoons all-purpose flour</li>
+                        <li class="ingredient-text">1 teaspoon ground ginger</li>
+                        <li class="ingredient-text">1/4 teaspoon ground nutmeg</li>
+                        <li class="ingredient-text">6 to 7 cups thinly sliced peeled tart apples</li>
+                        <li class="ingredient-text">Dough for double-crust pie</li>
+                        <li class="ingredient-text">1 tablespoon butter</li>
+                        <li class="ingredient-text">1 large egg white</li>
+                    </ul>
+                </section>
+                <section class="instructions-container">
+                    <h2 class="instructions-heading">How To Cook</h2>
+                    <ol>
+                        <li class="instructions-text">Preheat oven to 375 degrees.In a small bowl, 
+                            combine sugars, flours and spices; set aside. In a large bowl, 
+                            toss apples with lemon juice. Add sugar mixture; toss to coat</li>
+                        <li class="instructions-text">On a lightly floured surface, 
+                            rolls one half of dough to a 1/8-in thick circle; transfer to a 9-inch pie plate.Trim even with a rim.
+                            Add filling; dot with butter. Roll remiang dogh to a 1/8 inch thick circle.
+                            Place over filling. Trim, seal and flute edge. Cut slits on top. Beat egg white until foamy; brush over crust. Sprinkle it with sugar.
+                            Cover the edge loosely with foil. </li>
+                        <li class="instructions-text">Bake for 25 minutes.Remove foil; bake until crust is golden brown and filling
+                            is bubbly, 20-25 minutes longer. Cook on a wire rack.
+                        </li>
+                        
+                    </ol>
+                </section>
+                </main>
+                <section class="recipe-image-section">
+                    <img class="recipe-image" 
+                    alt="apple-pie-image" 
+                    src="https://images.ctfassets.net/3s5io6mnxfqz/CNXz6YGnSO7JwEhivvy7U/29530e00586123ecb537eb966ec29f42/image1.jpg"/>
+                <p class="recipe-title">Apple Pie</p>
+            </section>
+        </div>
+    </body>
+    </html>
