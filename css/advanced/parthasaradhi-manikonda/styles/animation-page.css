@@ -72,21 +72,21 @@ body {
   }
 }
 
-.card-heading,
-.card-description,
-.card-link {
+.text1,
+.text2,
+.text3 {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeIn 0.5s forwards;
 }
 
-.card-heading {
+.text1 {
   animation-delay: 0.5s;
 }
-.card-description {
+.text2 {
   animation-delay: 1.5s;
 }
-.card-link {
+.text3 {
   animation-delay: 2.5s;
 }
 
