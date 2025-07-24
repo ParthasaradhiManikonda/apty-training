@@ -33,8 +33,7 @@ betwiseXorBtn.addEventListener("click", function () {
 
 betwiseNotBtn.addEventListener("click", function () {
     const [num1, num2] = getInputs();
-    resultEl.textContent = `The result of ~ ${num1}  is ${~num1}`;
-    resultEl.textContent =`The result of ~ ${num2} is ${~num2}`;
+    resultEl.textContent = `The result of ~${num1} is ${~num1}, and ~${num2} is ${~num2}`;
 
 });
 
@@ -52,6 +51,6 @@ betwiseRshiftBtn.addEventListener("click", function () {
 
 betwiseUnsignedRshiftBtn.addEventListener("click", function () {
     const [num1,num2] = getInputs();;
-    resultEl.textContent = `The result of ${num1}>>>${num2} is ${num1>>>{num2}}`;
+    resultEl.textContent = `The result of ${num1}>>>${num2} is ${num1>>>num2}`;
 
 });
