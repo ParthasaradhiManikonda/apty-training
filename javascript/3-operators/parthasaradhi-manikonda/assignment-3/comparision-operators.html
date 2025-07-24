@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Comparision-operators</title>
+    <style></style>
+    <script src="scripts/comparision-operators.js" defer></script>
+  </head>
+  <body>
+    <h2>Comparision operators</h2>
+
+    <label>Value 1:</label>
+    <input type="text" id="value1" />
+    <select id="type1">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option></select
+    ><br /><br />
+    <br />
+
+    <label>Value 2:</label>
+    <input type="text" id="value2" />
+    <select id="type2">
+      <option value="string">String</option>
+      <option value="number">Number</option>
+      <option value="boolean">Boolean</option></select
+    ><br /><br />
+    <br />
+
+    <div>
+      <button onclick="compareEqual()">==</button>
+      <button onclick="compareStrictEqual()">===</button>
+      <button onclick="compareNotEqual()">!=</button>
+      <button onclick="compareStrictNotEqual()">!==</button>
+      <button onclick="compareGreater()">></button>
+      <button onclick="compareLess()"><</button>
+      <button onclick="compareGreaterEqual()">>=</button>
+      <button onclick="compareLessEqual()"><=</button>
+    </div>
+
+    <p id="result"></p>
+  </body>
+</html>

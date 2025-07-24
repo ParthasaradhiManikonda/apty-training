@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>betwise-operators</title>
+    <style>
+      div {
+        background-color: rgb(226, 223, 223);
+        width: 300px;
+        text-align: center;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <script src="scripts/betwise-operators.js" defer></script>
+  </head>
+
+  <body>
+    <div id="calculator-app">
+      <h1>Calculator app with betwise operators</h1>
+      <input type="number" id="input-number-1" /><br /><br />
+      <input type="number" id="input-number-2" /><br />
+      <p>select the operator</p>
+      <button id="betwiseAnd">&</button>
+      <button id="betwiseOr">|</button>
+      <button id="betwiseXor">^</button>
+      <button id="betwiseNot">~</button>
+      <button id="betwiseLshift">&lt;&lt;</button>
+      <button id="betwiseRshift">&gt;&gt;</button>
+      <button id="betwiseUnsignedRshift">&gt;&gt;&gt;</button>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
