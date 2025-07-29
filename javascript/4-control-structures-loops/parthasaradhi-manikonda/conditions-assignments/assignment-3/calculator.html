@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <style>
+      input,
+      button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      #result {
+        font-weight: bold;
+      }
+      .main-calculator-app {
+        background-color: gainsboro;
+        width: 500px;
+        height: 300px;
+      }
+    </style>
+    <script src="scripts/calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="main-calculator-app">
+      <h2>Simple Calculator App</h2>
+
+      <label>Value 1: <input type="number" id="value1" /></label><br />
+      <label>Value 2: <input type="number" id="value2" /></label><br />
+
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculate('-')">-</button>
+      <button onclick="calculate('*')">*</button>
+      <button onclick="calculate('/')">/</button>
+      <button onclick="calculate('%')">%</button>
+      <button onclick="calculate('++')">++ (Val1)</button>
+      <button onclick="calculate('--')">-- (Val1)</button>
+      <p id="result">output:</p>
+    </div>
+  </body>
+</html>
