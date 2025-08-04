@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Function Expression.</title>
+  </head>
+  <body>
+    <h2>Sorting an Array</h2>
+    <form id="form" action="/submit">
+      <label for="text">Enter numbers (comma-separated):</label>
+      <input type="text" id="numberInput" placeholder="e.g. 7,3,9,1" required />
+      <button type="submit">Sort</button>
+    </form>
+
+    <h3>Result:</h3>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Before Sorting</th>
+          <th>After Sorting</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="beforeSort"></td>
+          <td id="afterSort"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="scripts/sorting.js"></script>
+  </body>
+</html>
