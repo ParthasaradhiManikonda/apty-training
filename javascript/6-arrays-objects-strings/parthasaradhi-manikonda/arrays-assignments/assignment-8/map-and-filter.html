@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Completed Tasks Filter</title>
+  </head>
+  <body>
+    <h2>Task Manager</h2>
+
+    <label for="task">Task Name:</label>
+    <input type="text" id="task" placeholder="Enter task name" />
+
+    <label>
+      <input type="checkbox" id="completed" />
+      Completed
+    </label>
+
+    <button id="addTaskBtn">Add Task</button>
+    <button id="showCompletedBtn">Show Completed Tasks</button>
+
+    <p><strong>Task List:</strong></p>
+    <ul id="taskList"></ul>
+
+    <p><strong>Output:</strong> <span id="output">[]</span></p>
+
+    <script>
+      const taskInput = document.getElementById("task");
+      const completedInput = document.getElementById("completed");
+      const addTaskBtn = document.getElementById("addTaskBtn");
+      const showCompletedBtn = document.getElementById("showCompletedBtn");
+      const taskList = document.getElementById("taskList");
+      const output = document.getElementById("output");
+
+      const tasks = [];
+
+      addTaskBtn.addEventListener("click", () => {
+        const taskName = taskInput.value.trim();
+        const isCompleted = completedInput.checked;
+
+        if (taskName === "") {
+          alert("Please enter a task name.");
+          return;
+        }
+
+        tasks.push({ task: taskName, completed: isCompleted });
+
+        const li = document.createElement("li");
+        li.textContent = `${taskName} - ${
+          isCompleted ? "Completed" : "Incomplete"
+        }`;
+        taskList.appendChild(li);
+
+        taskInput.value = "";
+        completedInput.checked = false;
+      });
+
+      showCompletedBtn.addEventListener("click", () => {
+        const completedTasks = tasks
+          .filter((t) => t.completed)
+          .map((t) => `'${t.task}'`);
+
+        output.textContent = `[${completedTasks.join(", ")}]`;
+      });
+    </script>
+  </body>
+</html>

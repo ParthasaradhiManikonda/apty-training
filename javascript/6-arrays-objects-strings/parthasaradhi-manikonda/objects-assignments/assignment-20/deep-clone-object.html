@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Clone Object</title>
+  </head>
+  <body>
+    <h2>Deep Clone an Object</h2>
+
+    <label for="objectInput">Enter Object (JSON format):</label><br />
+    <textarea
+      id="objectInput"
+      rows="5"
+      cols="50"
+      placeholder='{"a":1,"b":{"c":2},"d":[3,4,{"e":5}]}'
+    >
+    </textarea
+    ><br /><br />
+
+    <label for="keyPath">Enter Nested Key Path (dot notation):</label><br />
+    <input
+      id="keyPath"
+      type="text"
+      placeholder="e.g., b.c or d.2.e"
+    /><br /><br />
+
+    <label for="newValue">Enter New Value:</label><br />
+    <input id="newValue" type="text" /><br /><br />
+
+    <button id="cloneBtn">Deep Clone & Modify</button>
+
+    <h3>Result:</h3>
+    <pre id="output"></pre>
+
+    <script src="scripts/deep-clone-object.js"></script>
+  </body>
+</html>
