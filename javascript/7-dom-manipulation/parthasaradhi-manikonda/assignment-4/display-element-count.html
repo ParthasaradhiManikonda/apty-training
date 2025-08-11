@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Element Count</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      button {
+        margin-bottom: 15px;
+        padding: 8px 16px;
+      }
+
+      li {
+        padding: 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Element Counter</h2>
+
+    <div>I am inside a div</div>
+    <div>I am inside a div</div>
+    <p>I am inside a p</p>
+    <span>I am inside span</span>
+    <span>I am inside a span</span><br /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/qP23O70ve7k?si=KUpkWWcR85FJmcdP"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <br />
+    <br />
+    <button id="countBtn">Count Elements</button>
+
+    <h3>Element Counts:</h3>
+    <ol id="resultList"></ol>
+
+    <script src="scripts/display-element-count.js"></script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Rows in Shadow DOM</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      button {
+        margin: 4px;
+        padding: 4px 8px;
+      }
+      select {
+        margin: 4px;
+        padding: 4px;
+      }
+      #shadowHost {
+        display: block;
+        border: 1px solid #888;
+        margin-top: 10px;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Move Table Rows (Shadow DOM)</h2>
+
+    <p>
+      Select Row:
+      <select id="rowSelector"></select>
+    </p>
+    <button id="upBtn">Up</button>
+    <button id="downBtn">Down</button>
+    <button id="topBtn">Top</button>
+    <button id="bottomBtn">Bottom</button>
+
+    <div id="shadowHost"></div>
+
+    <script src="scripts/moving-shadow-dom.js"></script>
+  </body>
+</html>

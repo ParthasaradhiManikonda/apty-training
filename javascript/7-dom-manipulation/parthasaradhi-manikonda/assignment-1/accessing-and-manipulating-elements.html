@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing and Manipulating Elements</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Accessing and Manipulating Elements</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Class Name</th>
+          <th>Tag</th>
+          <th>Name</th>
+          <th>Attribute</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- a) ID column -->
+          <td>
+            <p id="p1">Paragraph 1</p>
+            <p id="p2">Paragraph 2</p>
+            <button id="changeColorBtn">Change Random Text Color</button>
+          </td>
+
+          <!-- b) Class Name column -->
+          <td>
+            <p class="sameClass">Class Item 1</p>
+            <p class="sameClass">Class Item 2</p>
+            <p class="sameClass">Class Item 3</p>
+            <button id="toggleBgBtn">Toggle Background</button>
+          </td>
+
+          <!-- c) Tag column -->
+          <td>
+            <span>Span 1</span>
+            <span>Span 2</span>
+            <span>Span 3</span>
+            <button id="changeSpanBtn">Change Span Text</button>
+          </td>
+
+          <!-- d) Name column -->
+          <td>
+            <input type="text" name="input1" value="First" />
+            <input type="text" name="input2" value="Second" />
+            <button id="toggleDisableBtn">Toggle Disable</button>
+          </td>
+
+          <!-- e) Attribute column -->
+          <td>
+            <p custom-attr="one">Custom Attr 1</p>
+            <p custom-attr="two">Custom Attr 2</p>
+            <button id="addAttrBtn">Add New Attribute</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="scripts/accessing-and-manipulating-elements.js"></script>
+  </body>
+</html>

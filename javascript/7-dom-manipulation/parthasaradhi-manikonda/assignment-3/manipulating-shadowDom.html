@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessing and Manipulating Shadow DOM Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      button {
+        margin: 5px;
+        padding: 6px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Accessing and Manipulating Shadow DOM Elements</h2>
+
+    <!-- Buttons OUTSIDE the Shadow DOM -->
+    <div>
+      <button id="changeColorBtn">Change Random Text Color</button>
+      <button id="toggleBgBtn">Toggle Background</button>
+      <button id="changeSpanBtn">Change Span Text</button>
+      <button id="toggleDisableBtn">Toggle Disable</button>
+      <button id="addAttrBtn">Add New Attribute</button>
+    </div>
+
+    <!-- Shadow DOM host -->
+    <div id="shadowHost"></div>
+
+    <script src="scripts/manipulating-shadowDom.js"></script>
+  </body>
+</html>
