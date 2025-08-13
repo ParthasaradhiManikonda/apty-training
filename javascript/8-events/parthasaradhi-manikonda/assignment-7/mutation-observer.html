@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mutation-Observer</title>
+    <style>
+      .editable {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        min-width: 200px;
+        cursor: pointer;
+      }
+
+      .editable textarea {
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        border: 1px solid #888;
+        border-radius: 4px;
+        resize: none;
+      }
+
+      .icon {
+        margin-left: 8px;
+        font-size: 16px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Mutation-Observer</h3>
+    <div id="container">
+      <div class="editable" id="editableDiv">
+        <span class="text">Click to edit this text</span>
+        <span class="icon">✏️</span>
+      </div>
+    </div>
+
+    <script src="scripts/mutation-observer.js"></script>
+  </body>
+</html>

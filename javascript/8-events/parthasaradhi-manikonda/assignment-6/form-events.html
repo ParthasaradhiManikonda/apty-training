@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Live Validation Registration Form</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      button {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm" novalidate>
+      <label>
+        Username
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          minlength="3"
+        />
+        <span class="error-message" id="usernameError"></span>
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" name="email" required />
+        <span class="error-message" id="emailError"></span>
+      </label>
+
+      <label>
+        Password
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+        />
+        <span class="error-message" id="passwordError"></span>
+      </label>
+
+      <label>
+        Confirm Password
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+        <span class="error-message" id="confirmPasswordError"></span>
+      </label>
+
+      <button type="submit" id="submitBtn" disabled>Register</button>
+    </form>
+
+    <script src="scripts/form-events.js"></script>
+  </body>
+</html>
