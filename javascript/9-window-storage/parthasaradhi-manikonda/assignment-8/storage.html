@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localStorage & sessionStorage Example</title>
+  </head>
+  <body>
+    <h2>localStorage & sessionStorage Example</h2>
+
+    <label>
+      LocalStorage Data:
+      <input type="text" id="localInput" />
+    </label>
+    <button id="saveLocal">Save to localStorage</button>
+    <br /><br />
+
+    <label>
+      SessionStorage Data:
+      <input type="text" id="sessionInput" />
+    </label>
+    <button id="saveSession">Save to sessionStorage</button>
+    <br /><br />
+
+    <h3>Stored Data on Reload:</h3>
+    <p><strong>localStorage:</strong> <span id="localData"></span></p>
+    <p><strong>sessionStorage:</strong> <span id="sessionData"></span></p>
+
+    <script src="scripts/storage.js"></script>
+  </body>
+</html>

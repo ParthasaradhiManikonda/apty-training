@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie</title>
+  </head>
+  <body>
+    <h1>Cookie Manager</h1>
+
+    <div>
+      <input type="text" id="cookieName" placeholder="Cookie Name" />
+      <input type="text" id="cookieValue" placeholder="Cookie Value" />
+      <input type="number" id="cookieDays" placeholder="Days to Expire" /><br>
+      <button onclick="createCookie()">Set Cookie</button>
+    </div>
+
+    <div>
+      <input type="text" id="readName" placeholder="Name to Read" />
+      <button onclick="readCookieValue()">Read Cookie</button>
+    </div>
+
+    <div>
+      <input type="text" id="deleteName" placeholder="Name to Delete" />
+      <button onclick="removeCookie()">Delete Cookie</button>
+    </div>
+
+    <p id="output"></p>
+
+    <script src="scripts/cookies.js"></script>
+  </body>
+</html>
