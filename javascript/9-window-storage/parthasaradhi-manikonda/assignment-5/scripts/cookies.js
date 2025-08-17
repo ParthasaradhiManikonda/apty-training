@@ -1,4 +1,3 @@
-// Function to set/create a cookie
 function setCookie(name, value, days) {
 let expires = "";
 if (days) {
@@ -10,7 +9,6 @@ document.cookie =
     name + "=" + encodeURIComponent(value) + expires + "; path=/";
 }
 
-// Function to read/get a cookie by name
 function getCookie(name) {
 const nameEQ = name + "=";
 const cookiesArray = document.cookie.split(";");
@@ -23,13 +21,11 @@ for (let cookie of cookiesArray) {
 return null;
 }
 
-// Function to delete a cookie
 function deleteCookie(name) {
 document.cookie =
     name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
-// UI helper functions
 function createCookie() {
 const name = document.getElementById("cookieName").value.trim();
 const value = document.getElementById("cookieValue").value.trim();
