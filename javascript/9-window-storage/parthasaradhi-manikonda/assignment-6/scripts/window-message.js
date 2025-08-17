@@ -1,9 +1,11 @@
-const iframe = document.getElementById("childFrame");
-function sendToChild() {
-const msg = document.getElementById("parentMessage").value;
-iframe.contentWindow.postMessage(msg, "*");
+function sendToIframe() {
+  let msg = document.getElementById("parentMessage").value;
+  document.getElementById("myFrame").contentWindow.postMessage(msg, window.location.origin);
 }
 
-window.addEventListener("message", function (event) {
-document.getElementById("fromChild").textContent = event.data;
-});
+window.addEventListener("message", (event) => {
+  if (event.origin !== window.location.origin) {
+    return;
+  }
+  document.getElementById("iframeMsg").textContent = event.data;
+})

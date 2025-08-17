@@ -1,51 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Child Window</title>
-  </head>
-  <body>
-    <h1>Child Window (Iframe)</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Window Relationships - Child</title>
+	</head>
+	<body>
+		<h1>Child Window</h1>
+		<button id="sendMessageToParent">Send Message to Parent</button>
+		<p id="messageFromParent">Waiting for message from parent...</p>
 
-    <div>
-      <h3>Message from Parent:</h3>
-      <p id="fromParent">(no message yet)</p>
-    </div>
-
-    <div>
-      <h3>Send message to Parent (immediate):</h3>
-      <input type="text" id="msgToParent" placeholder="Type a message" />
-      <button id="sendToParent">Send via parent</button>
-    </div>
-
-    <div>
-      <h3>Send message to Top Window:</h3>
-      <input type="text" id="msgToTop" placeholder="Type a message" />
-      <button id="sendToTop">Send via top</button>
-    </div>
-
-    <script>
-      // Receive message from parent
-      window.addEventListener("message", function (event) {
-        document.getElementById("fromParent").textContent = event.data;
-      });
-
-      // Send to immediate parent
-      document
-        .getElementById("sendToParent")
-        .addEventListener("click", function () {
-          const msg = document.getElementById("msgToParent").value;
-          window.parent.postMessage("Child to Parent: " + msg, "*");
-        });
-
-      // Send to topmost window
-      document
-        .getElementById("sendToTop")
-        .addEventListener("click", function () {
-          const msg = document.getElementById("msgToTop").value;
-          window.top.postMessage("Child to Top: " + msg, "*");
-        });
-    </script>
-  </body>
+		<script src="scripts/child.js"></script>
+	</body>
 </html>

@@ -3,41 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Child Window</title>
+    <title>PostMessage Example - Child</title>
   </head>
   <body>
-    <h1>Child Window</h1>
+    <h1>Iframe Window</h1>
 
-    <!-- Section to display message from Parent -->
-    <div>
-      <h3>Message from Parent:</h3>
-      <p id="fromParent">(no message yet)</p>
-    </div>
+    <input type="text" id="childMessage" placeholder="Message to parent" />
+    <button onclick="sendToParent()">Send to Parent</button>
 
-    <!-- Section to send message to Parent -->
-    <div>
-      <h3>Send message to Parent:</h3>
-      <input type="text" id="childMessage" placeholder="Type a message" />
-      <button id="sendToParent">Send to Parent</button>
-    </div>
+    <p><b>Message from parent:</b> <span id="parentMsg"></span></p>
 
-    <script>
-      // 1️⃣ Receive message from Parent
-      window.addEventListener("message", function (event) {
-        // Optional security check — uncomment and update if needed
-        // if (event.origin !== "http://yourdomain.com") return;
-
-        document.getElementById("fromParent").textContent =
-          event.data || "(empty message)";
-      });
-
-      // 2️⃣ Send message to Parent when button is clicked
-      document
-        .getElementById("sendToParent")
-        .addEventListener("click", function () {
-          const message = document.getElementById("childMessage").value;
-          window.parent.postMessage(message, "*"); // "*" = allow any origin
-        });
-    </script>
+    <script src="scripts/child.js"></script>
   </body>
 </html>

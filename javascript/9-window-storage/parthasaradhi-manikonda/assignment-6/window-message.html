@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parent Window</title>
+    <title>PostMessage Example - Parent</title>
   </head>
   <body>
     <h1>Parent Window</h1>
-    <iframe id="childFrame" src="child.html"></iframe>
-    <div>
-      <h3>Send message to iframe:</h3>
-      <input type="text" id="parentMessage" placeholder="Type a message" />
-      <button onclick="sendToChild()">Send to Child</button>
-    </div>
-    <div>
-      <h3>Message from Child:</h3>
-      <p id="fromChild">(no message yet)</p>
-    </div>
+
+    <input type="text" id="parentMessage" placeholder="Message to iframe" />
+    <button onclick="sendToIframe()">Send to Iframe</button>
+
+    <p><b>Message from iframe:</b> <span id="iframeMsg"></span></p>
+
+    <iframe
+      src="../assignment-6/child.html"
+      id="myFrame"
+      width="400"
+      height="200"
+      style="border: 1px solid black"
+    ></iframe>
+
     <script src="scripts/window-message.js"></script>
   </body>
 </html>

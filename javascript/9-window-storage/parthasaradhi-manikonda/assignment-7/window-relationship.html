@@ -3,36 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Parent Window</title>
+    <title>Window Relationships - Parent</title>
   </head>
   <body>
-    <h1>Parent Window (Top Level)</h1>
-
-    <iframe id="childFrame" src="child.html" width="400" height="300"></iframe>
-
-    <div>
-      <h3>Send message to Child:</h3>
-      <input type="text" id="parentMessage" placeholder="Type a message" />
-      <button onclick="sendToChild()">Send to Child</button>
-    </div>
-
-    <div>
-      <h3>Message from Child:</h3>
-      <p id="fromChild">(no message yet)</p>
-    </div>
-
-    <script>
-      // Send message to child iframe
-      function sendToChild() {
-        const childFrame = document.getElementById("childFrame").contentWindow;
-        const msg = document.getElementById("parentMessage").value;
-        childFrame.postMessage(msg, "*");
-      }
-
-      // Receive message from child
-      window.addEventListener("message", function (event) {
-        document.getElementById("fromChild").textContent = event.data;
-      });
-    </script>
+    <h1>Parent Window</h1>
+    <button id="openChildWindow">Open Child Window</button>
+    <button id="sendMessageToChild">Send Message to Child</button>
+    <p id="messageFromChild">Waiting for message from child...</p>
+    <script src="scripts/window-relationship.js"></script>
   </body>
 </html>
