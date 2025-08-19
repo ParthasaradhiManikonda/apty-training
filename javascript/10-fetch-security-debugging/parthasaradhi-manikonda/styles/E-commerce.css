@@ -141,7 +141,7 @@ main {
 }
 
 .product-item p {
-  font-size: 0.85;
+  font-size: 0.85rem;
   color: #666;
   font-weight: 600;
 }
